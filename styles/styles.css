@@ -78,7 +78,7 @@ a:active {
 
 #main {
 	/* border: solid 1px blue; */
-	bottom: 100px; /* height of sticky footer */
+	bottom: 50px; /* height of sticky footer */
 	margin: auto;
 	}
 
@@ -111,18 +111,16 @@ header {
 /* Footer -------------------------------------- */
 
 footer {
-	background-color: #000;
+	background-color: #1D0C00;
 	bottom: 0; /* for sticky footer */
-	height: 100px; /* height of sticky footer */
+	height: 50px; /* height of sticky footer */
 	position: absolute; /* for sticky footer */
 	width: 100%; /* for sticky footer */
 	}
 
 footer p {
-	color: #fffff0;
+	color: #ccc;
 	font-size: 12px;
-	padding-left: 20px;
-	text-align: center;
 	}
 
 /* reference: http://css-tricks.com/snippets/css/media-queries-for-standard-devices/ */
