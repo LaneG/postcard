@@ -9,7 +9,6 @@ working
 todo
 ====
 - responsive font strategy
-- make page load faster (background jpg is delayed)
 
 bugs
 ====
@@ -28,3 +27,5 @@ done
 ====
 - fix sticky footer
 - update urls in footer to be specific articles referenced
+- make page load faster (background jpg is delayed?)
+
