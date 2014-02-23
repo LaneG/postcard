@@ -12,6 +12,7 @@ todo
 
 bugs
 ====
+- make page load faster (see http://tools.pingdom.com/) Reduce .gif size without reducing quality (page load speed)
 - why is footer not sticky on iPhone and iPad? add @media or iPad and iPhone?
 - image height too tall on iPhone, add @media to handle with different approach for device?
 - why is font doubled on iPad/safari?
@@ -27,5 +28,7 @@ done
 ====
 - fix sticky footer
 - update urls in footer to be specific articles referenced
-- make page load faster (background jpg is delayed?)
+- made background (palms.jpg) smaller to improve load time
+
+
 
