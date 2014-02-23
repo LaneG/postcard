@@ -145,14 +145,6 @@ footer p {
 		#main {
 			background-color: pink;
 		}
-		img {
-			width: 40%;
-			height: 40%;
-		}
-		.img-box {
-			border: solid 5px #fdfdfd;
-			margin: 5px 60px;
-		}	
 	}
 
 	/* Transitional size (portrait) ----------- */
