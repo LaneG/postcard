@@ -140,10 +140,10 @@ footer p {
 			min-width: 320px;
 		}
 		#container {
-			margin: 0px auto;
+			/* margin: 0px auto; */
 		}
 		#main {
-			background-color: pink;
+			/* background-color: pink; */
 		}
 	}
 
@@ -157,42 +157,31 @@ footer p {
 			font-size: 37px;
 		}
 		#container {
-			border: 1px solid yellow;
 			min-width: 240px;
 			max-width: 240px;
 			} 
 		#main {
-			background-color: white;
+			/* background-color: white; */
 			}
 		}
 
 	/* Transitional size (landscape)  ----------- */
 	@media only screen and (max-width : 1223px) and (min-width : 891px) {
-		h1 {
-			border: 1px solid blue;
-		}
 		#page {
 			min-width: 320px;
 		}
 		#container {
-			border: 1px solid yellow;
-		}
-		#main {
-			background-color: yellow;
 			min-width: 729px;
 			max-width: 729px;
+		}
+		#main {
+			/* background-color: yellow; */
 		}
 	}
 	/* Desktops and laptops ----------- */
 	@media only screen and (min-width : 1224px) {
-			h1 {
-			border: 1px solid red;
-			}
-			#container {
-				border: 1px solid yellow;
-			}
 			#main {
-			background-color: white;
+			/* background-color: white; */
 			max-width: 729px;
 		}
 	}

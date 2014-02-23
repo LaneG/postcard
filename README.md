@@ -13,6 +13,11 @@ todo
 - image height too tall on iPhone
 - responsive font strategy
 
+bugs
+====
+- why is footer not sticky on iPhone and iPad?
+- why is font doubled on iPad/safari?
+
 new layouts
 ===========
 - wide screen: photos on top, text below
