@@ -8,12 +8,13 @@ working
 
 todo
 ====
-- image height too tall on iPhone
 - responsive font strategy
+- make page load faster (background jpg is delayed)
 
 bugs
 ====
-- why is footer not sticky on iPhone and iPad?
+- why is footer not sticky on iPhone and iPad? add @media or iPad and iPhone?
+- image height too tall on iPhone, add @media to handle with different approach for device?
 - why is font doubled on iPad/safari?
 
 new layouts
