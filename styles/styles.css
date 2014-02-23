@@ -157,9 +157,6 @@ footer p {
 
 	/* Transitional size (portrait) ----------- */
 	@media only screen and (max-width : 892px) and (min-width : 321px) {
-		#page {
-			max-width: 729px;
-		}
 		#container {
 			border: 1px solid yellow;
 			min-width: 240px;
