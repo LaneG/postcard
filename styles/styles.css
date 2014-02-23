@@ -1,0 +1,179 @@
+/* http://css-tricks.com/perfect-full-page-background-image/ */
+html { 
+	background: url(../images/palms.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	} 
+
+/* http://blog.softlayer.com/2012/tips-and-tricks-pure-css-sticky-footers */
+
+html, body {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	}
+
+body {
+	color: #1D0C00;
+	font-family: 'Cardo', serif;
+	font-size: 16px;
+	}
+
+a:link {
+	color:#007ba4;
+	text-decoration: none;
+	}      
+
+a:visited {
+	color:#007ba4;
+	text-decoration: none;
+	} 
+
+a:hover {
+	color:#32aed7;
+	text-decoration: underline;
+	}  
+
+a:active {
+	color:#007ba4;
+	text-decoration: none;
+	}  
+
+/* see "fluid images" by Ethan Marcotte for IE 7 and older support */
+img {
+	max-width: 100%;
+	}
+
+
+/* Main Content -------------------------------- */
+
+
+article {
+	font-size: 21px;
+	margin-top: 30px;
+	}
+
+#page {
+	height: 100%; /* for sticky footer in IE only */
+	margin: auto;
+	min-height: 100%; /* for sticky footer */
+	position: relative; /* for sticky footer */
+	width: 80%;
+	}
+
+#container {
+	margin: 30px auto 0;
+	width: 75%;
+}
+
+.img-box {
+	/* border: solid 10px #fffff0; */
+	margin: 20px;
+	}
+
+/* http://css-tricks.com/snippets/css/css-box-shadow/ */
+
+.one-edge-shadow {
+	-webkit-box-shadow: 0 12px 20px -12px #000;
+	   -moz-box-shadow: 0 12px 20px -12px #000;
+	        box-shadow: 0 12px 20px -12px #000;
+}
+
+/* Header -------------------------------------- */
+
+header {
+	margin-top: 150px;
+}
+
+h1 {
+	color: #1D0C00;
+	font-size: 50px;
+	margin: 0;
+	text-align: center;
+	}
+
+/* Footer -------------------------------------- */
+
+footer {
+	background-color: #000;
+	position: absolute; /* for sticky footer */
+	width: 100%; /* for sticky footer */
+	bottom: 0; /* for sticky footer */
+	height: 50px; /* for sticky footer */
+}
+
+footer p {
+	color: #fffff0;
+	font-size: 12px;
+	padding-left: 20px;
+}
+
+/* reference: http://css-tricks.com/snippets/css/media-queries-for-standard-devices/ */
+
+/* Smartphones (portrait) 320x480 ----------- */
+	@media only screen and (max-width : 320px){
+		header {
+			margin-top: 10px;
+			padding: 0;
+		}
+		h1 {
+			font-size: 37px;
+		}
+		#page {
+			min-width: 320px;
+		}
+		#container {
+			/* background-color: white; */
+			margin: 0px auto;
+		}
+		img {
+			width: 40%;
+			height: 40%;
+		}
+		.img-box {
+			border: solid 5px #fdfdfd;
+			margin: 5px 60px;
+		}	
+		footer {
+			display: none;
+		}
+	}
+
+	/* Transitional size (portrait) ----------- */
+	@media only screen and (max-width : 892px) and (min-width : 321px) {
+		#page {
+			max-width: 729px;
+		}
+		
+		/* TODO: move the article to the right of the pictures */
+
+		article {
+		}
+
+		#container {
+			/* background-color: white; */
+			min-width: 240px;
+			max-width: 240px;
+		}
+	}
+
+	/* Transitional size (landscape)  ----------- */
+	@media only screen and (max-width : 1223px) and (min-width : 891px) {
+		#page {
+			min-width: 320px;
+		}
+		#container {
+			/* background-color: yellow; */
+			min-width: 729px;
+			max-width: 729px;
+		}
+	}
+	/* Desktops and laptops ----------- */
+	@media only screen and (min-width : 1224px) {
+		#container {
+			/* background-color: white; */
+			max-width: 729px;
+		}
+	}
