@@ -1,5 +1,4 @@
 /* http://css-tricks.com/perfect-full-page-background-image/ */
-
 html { 
 	background: url(../images/palms.jpg) no-repeat center center fixed; 
 	-webkit-background-size: cover;
@@ -20,15 +19,6 @@ body {
 	color: #1D0C00;
 	font-family: 'Cardo', serif;
 	font-size: 16px;
-	}
-
-
-h1 {
-	/* border: solid 1px blue; */
-	color: #1D0C00;
-	font-size: 50px;
-	margin: 0 0 30px 0;
-	text-align: center;
 	}
 
 p {
@@ -69,24 +59,17 @@ a:active {
 
 
 #page {
-	/* border: solid 1px red; */
 	height: 100%; /* for sticky footer in IE only */
 	margin: auto;
 	min-height: 100%; /* for sticky footer */
 	position: relative; /* for sticky footer */
-	}
-
-#main {
-	/* border: solid 1px blue; */
-	bottom: 50px; /* height of sticky footer */
-	margin: auto;
+	width: 80%;
 	}
 
 #container {
-	padding-top: 1px; /* forcing 1px for sticky footer */
-	margin: auto;
+	margin: 30px auto 0;
 	width: 75%;
-	}
+}
 
 .img-box {
 	/* border: solid 10px #fffff0; */
@@ -97,31 +80,38 @@ a:active {
 
 .one-edge-shadow {
 	-webkit-box-shadow: 0 12px 20px -12px #000;
-	-moz-box-shadow: 0 12px 20px -12px #000;
-	box-shadow: 0 12px 20px -12px #000;
-	}
+	   -moz-box-shadow: 0 12px 20px -12px #000;
+	        box-shadow: 0 12px 20px -12px #000;
+}
 
 /* Header -------------------------------------- */
 
 header {
 	margin-top: 150px;
-	}
+}
 
+h1 {
+	color: #1D0C00;
+	font-size: 50px;
+	margin: 0;
+	text-align: center;
+	}
 
 /* Footer -------------------------------------- */
 
 footer {
-	background-color: #1D0C00;
-	bottom: 0; /* for sticky footer */
-	height: 50px; /* height of sticky footer */
+	background-color: #000;
 	position: absolute; /* for sticky footer */
 	width: 100%; /* for sticky footer */
-	}
+	bottom: 0; /* for sticky footer */
+	height: 50px; /* for sticky footer */
+}
 
 footer p {
-	color: #ccc;
+	color: #fffff0;
 	font-size: 12px;
-	}
+	padding-left: 20px;
+}
 
 /* reference: http://css-tricks.com/snippets/css/media-queries-for-standard-devices/ */
 
@@ -138,30 +128,39 @@ footer p {
 			min-width: 320px;
 		}
 		#container {
-			/* margin: 0px auto; */
+			/* background-color: white; */
+			margin: 0px auto;
 		}
-		#main {
-			/* background-color: pink; */
+		img {
+			width: 40%;
+			height: 40%;
+		}
+		.img-box {
+			border: solid 5px #fdfdfd;
+			margin: 5px 60px;
+		}	
+		footer {
+			display: none;
 		}
 	}
 
 	/* Transitional size (portrait) ----------- */
 	@media only screen and (max-width : 892px) and (min-width : 321px) {
-		header {
-			margin-top: 10px;
-			padding: 0;
+		#page {
+			max-width: 729px;
 		}
-		h1 {
-			font-size: 37px;
+		
+		/* TODO: move the article to the right of the pictures */
+
+		article {
 		}
+
 		#container {
+			/* background-color: white; */
 			min-width: 240px;
 			max-width: 240px;
-			} 
-		#main {
-			/* background-color: white; */
-			}
 		}
+	}
 
 	/* Transitional size (landscape)  ----------- */
 	@media only screen and (max-width : 1223px) and (min-width : 891px) {
@@ -169,16 +168,14 @@ footer p {
 			min-width: 320px;
 		}
 		#container {
+			/* background-color: yellow; */
 			min-width: 729px;
 			max-width: 729px;
-		}
-		#main {
-			/* background-color: yellow; */
 		}
 	}
 	/* Desktops and laptops ----------- */
 	@media only screen and (min-width : 1224px) {
-			#main {
+		#container {
 			/* background-color: white; */
 			max-width: 729px;
 		}
